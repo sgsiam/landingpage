@@ -1,0 +1,14 @@
+button {
+  outline: none;
+  border: 0;
+}
+button.btn-text {
+  padding-left: 0;
+  background: transparent;
+}
+a {
+  color: #1f409a;
+}
+a:hover {
+  color: #0a1533;
+}

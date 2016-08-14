@@ -1,0 +1,99 @@
+.mobilenav
+  position fixed
+  top 0
+  left 0
+  height 70px
+  width 250px
+  background $brand-dark
+  z-index $base-z-index + 1
+  box-shadow 0 0 5px rgba(0,0,0,.4)
+  .togglenav
+    position absolute
+    left 0
+    background $brand
+    height 70px
+    width 70px
+    display block
+    padding 0
+    margin 0
+    transition .1s
+    z-index $base-z-index + 2
+    &:hover
+      background $brand-dark
+    .one, .two, .three
+      width 29px
+      height 2px
+      background white
+      position absolute
+      top 34px
+      left 23px
+      transition .2s
+    .one
+      transform translateY(-7px)
+    .three
+      transform translateY(7px)
+  .brand
+    position absolute
+    left 70px
+    width 180px
+    height 70px
+    line-height 70px
+    text-align center
+    z-index $base-z-index + 2
+    img
+      width auto
+      height 50px
+
+.globalnav
+  width 100vw
+  height 100vh
+  position fixed
+  top 0
+  left 0
+  padding 10%
+  background hsla(224,80,20,.9)
+  opacity 0
+  z-index -1
+  transition .05s zIndex, .2s opacity
+  li
+    line-height 3em
+  a
+    color white
+    font-family 'Montserrat', sans-serif
+    font-size 2em
+    text-decoration none
+    transition .2s
+    display inline-block
+    position relative
+    &::before
+      content ''
+      position absolute
+      bottom 0
+      left 0
+      width 0
+      height 3px
+      background white
+      transition .2s
+    &:hover
+      &::before
+        width 100%
+body
+  &.activenav
+    .mobilenav
+      .togglenav
+        background $brand-dark
+        .one, .two, .three
+          background white
+        .one
+          transform translateY(0)
+          rotate(45deg)
+        .two
+          transform scaleX(0)
+        .three
+          transform translateY(0)
+          rotate(-45deg)
+      .brand
+        background $brand-dark
+    .globalnav
+      opacity 1
+      z-index z-index $base-z-index + 1

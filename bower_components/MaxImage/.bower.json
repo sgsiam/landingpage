@@ -1,0 +1,14 @@
+{
+  "name": "MaxImage",
+  "homepage": "https://github.com/akv2/MaxImage",
+  "_release": "90c24f4976",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "90c24f497681390eca73db7d85f91546999ffb64"
+  },
+  "_source": "https://github.com/akv2/MaxImage.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/akv2/MaxImage.git",
+  "_direct": true
+}

@@ -1,0 +1,27 @@
+{
+  "name": "sgsiam.github.io",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Sittipong HAUS <me@sittipong.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/sittipong/sgsiam.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "flex-layout-attribute": "https://github.com/StefanKovac/flex-layout-attribute.git#^1.0.3",
+    "MaxImage": "https://github.com/akv2/MaxImage.git",
+    "featherlight": "https://github.com/noelboss/featherlight.git#^1.5.0",
+    "shadowbox": "https://github.com/mjackson/shadowbox.git#^3.0.3",
+    "fancybox": "^2.1.5",
+    "cssgram": "https://github.com/una/CSSgram.git#^0.1.7",
+    "swipebox": "https://github.com/brutaldesign/swipebox.git#^1.4.4"
+  }
+}

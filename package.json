@@ -1,0 +1,41 @@
+{
+  "name": "sgsiam.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sittipong/sgsiam.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sittipong/sgsiam.github.io/issues"
+  },
+  "homepage": "https://github.com/sittipong/sgsiam.github.io#readme",
+  "dependencies": {
+    "bootstrap3-stylus": "0.1.0",
+    "gulp": "3.9.1",
+    "gulp-awspublish": "3.2.0",
+    "gulp-concat": "2.6.0",
+    "gulp-imagemin": "3.0.1",
+    "gulp-inject-string": "1.1.0",
+    "gulp-jade": "1.1.0",
+    "gulp-minify-css": "1.2.4",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-strip-debug": "1.1.0",
+    "gulp-stylus": "2.3.1",
+    "gulp-uglify": "1.5.3",
+    "imagemin-pngquant": "5.0.0",
+    "nib": "1.1.0",
+    "yargs": "4.7.1"
+  },
+  "devDependencies": {
+    "browser-sync": "2.12.8",
+    "gulp-connect": "4.0.0",
+    "gulp-watch": "4.3.6"
+  }
+}
