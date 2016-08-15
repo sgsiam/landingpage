@@ -197,7 +197,10 @@
       var aTag = $("[id='"+ aid +"']")
       $('html,body').animate({scrollTop: aTag.offset().top},'slow')
     }
-
+    $('video').click(function () {
+      $(this).play()
+      document.servicevideo.play()
+    })
   }
   var toggleNav = function () {
     $('body').toggleClass('activenav')

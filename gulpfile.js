@@ -67,11 +67,14 @@ var styleTaskDev = function () {
     .pipe(stylus({
       use: [nib(), bootstrap()]
     }))
+    .pipe(minifyCss({compatibility: 'ie8'}))
     .pipe(gulp.dest(dest.style))
 }
 var scriptTaskDev = function () {
   return gulp.src(src.script)
     // .pipe(concat('default.js'))
+    .pipe(stripDebug())
+    .pipe(uglify())
     .pipe(gulp.dest(dest.script))
 }
 var imageTaskProd = function () {
@@ -85,6 +88,11 @@ var imageTaskProd = function () {
 }
 var imageTaskDev = function () {
   return gulp.src(src.image)
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngquant()]
+    }))
     .pipe(gulp.dest(dest.image))
 }
 
