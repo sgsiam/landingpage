@@ -45,7 +45,7 @@
       height 50px
 
 .globalnav
-  width 100vw
+  width 0!important
   height 100vh
   position fixed
   top 0
@@ -54,7 +54,8 @@
   background hsla(224,80,20,.9)
   opacity 0
   z-index -1
-  transition .05s zIndex, .2s opacity
+  overflow hidden
+  transition .05s zIndex, 0s width, .2s opacity
   li
     line-height 3em
   a
@@ -95,5 +96,6 @@ body
       .brand
         background $brand-dark
     .globalnav
+      width 100vw!important
       opacity 1
-      z-index z-index $base-z-index + 1
+      z-index $base-z-index

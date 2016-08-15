@@ -91,11 +91,11 @@ var imageTaskDev = function () {
 /** build task **/
 var buildTask = function () {
   return gulp.src(src.script)
-    .pipe(sourcemaps.init())
-    .pipe(concat('default.js'))
+    // .pipe(sourcemaps.init())
+    // .pipe(concat('default.js'))
     .pipe(stripDebug())
     .pipe(uglify())
-    .pipe(sourcemaps.write())
+    // .pipe(sourcemaps.write())
     .pipe(gulp.dest(dest.script))
     .on('end', function () {
       return gulp.src(src.style)

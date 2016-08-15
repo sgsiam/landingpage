@@ -54,7 +54,7 @@
   height: 50px;
 }
 .globalnav {
-  width: 100vw;
+  width: 0 !important;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -63,7 +63,8 @@
   background: rgba(10,32,92,0.9);
   opacity: 0;
   z-index: -1;
-  transition: 0.05s zIndex, 0.2s opacity;
+  overflow: hidden;
+  transition: 0.05s zIndex, 0s width, 0.2s opacity;
 }
 .globalnav li {
   line-height: 3em;
@@ -111,6 +112,7 @@ body.activenav .mobilenav .brand {
   background: $brand-dark;
 }
 body.activenav .globalnav {
+  width: 100vw !important;
   opacity: 1;
-  z-index: z-index $base-z-index1;
+  z-index: $base-z-index;
 }

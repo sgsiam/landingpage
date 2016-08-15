@@ -5914,7 +5914,7 @@ hr.underliner {
   height: 50px;
 }
 .globalnav {
-  width: 100vw;
+  width: 0 !important;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -5924,8 +5924,9 @@ hr.underliner {
   opacity: 0;
   filter: alpha(opacity=0);
   z-index: -1;
-  -webkit-transition: 0.05s zIndex, 0.2s opacity;
-  transition: 0.05s zIndex, 0.2s opacity;
+  overflow: hidden;
+  -webkit-transition: 0.05s zIndex, 0s width, 0.2s opacity;
+  transition: 0.05s zIndex, 0s width, 0.2s opacity;
 }
 .globalnav li {
   line-height: 3em;
@@ -5981,9 +5982,10 @@ body.activenav .mobilenav .brand {
   background: #0a1533;
 }
 body.activenav .globalnav {
+  width: 100vw !important;
   opacity: 1;
   filter: alpha(opacity=100);
-  z-index: z-index 10000;
+  z-index: 9999;
 }
 #about,
 #number {
